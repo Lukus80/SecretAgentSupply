@@ -10,14 +10,15 @@ header {
   display: flex;
   background-color: black;
   padding: 5px 200px;
-  height: 50px
+  height: 40px
   align-items: center;
 
 }
 
-div.logo {
+div.logo img {
   display: flex;
   margin-right: 30px;
+  max-height: 35px;
 }
 
 header div {
@@ -55,5 +56,14 @@ nav {
   background-position: center;
   background-size: cover;
   height: 300px;
-  width: 100%
+  width: 100%;
+
+}
+
+.boxhead {
+
+  background-color: black;
+  margin: 50px 200px;
+  max-width: 350px;
+
 }
