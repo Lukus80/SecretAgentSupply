@@ -7,10 +7,16 @@ body {
   color: white;
 }
 
+/*
+img {
+  border: 1px solid red;
+}
+*/
+
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 0.25em;
+  margin-top: 0.25rem;
 }
 
 header {
@@ -33,14 +39,16 @@ header div {
 }
 
 nav {
-  display: inline-flex;
+  display: flex;
   background-color: firebrick;
   width: 100%;
   height: 30px;
   margin: 0px auto;
   justify-content: space-between;
-  padding: 0.75rem 200px;
+  padding: 0.75rem ;
   align-items: center;
+  background-size: cover;
+
 
 }
 
@@ -58,6 +66,15 @@ nav {
   width: 100%;
 }
 
+.container {
+  max-width: 960px;
+  display: block;
+  margin: 0px auto;
+  overflow: visible;
+  background-size: cover;
+
+}
+
 .boxhead {
   display: flex;
   flex-direction: column;
@@ -73,38 +90,71 @@ nav {
 
 .items {
   display: flex;
-  margin: 3rem 175px;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  margin-top: 3rem;
+  justify-content: space-between;
 }
 
 .item {
-  display: flex;
-  flex-flow: column wrap;
   border: 4px solid black;
-  background-color: white;
+  display: block;
   width: 30%;
-  height: 15rem;
-  justify-content: flex-end;
-  overflow: hidden;
+
 }
 
-.item p {
+.item-img {
+  display: flex;
+  height: 9rem;
+  padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
   display: block;
   padding: 0.5rem;
   text-align: center;
   background-color: black;
-  width: 100%;
 
 }
 
-.item img {
+.item-img img {
+  max-width: 8rem;
+}
+
+.container.details {
   display: flex;
-  max-width: 50%;
-  max-height: 9rem;
+  margin-top: 3rem;
+  justify-content: space-between;
+
+}
+
+.details {
   display: flex;
-  margin: 2rem auto;
-  justify-content: center;
+  flex-flow: column wrap;
+  width: 35%;
+  margin-top: 3rem;
+  justify-content: space-between;
+
+}
+
+.title {
+  padding: 1rem 2rem;
+  text-align: left;
+  background-color: black;
+  display: block;
+}
+
+.details p {
+  color: black;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  height: 5rem;
+  margin-top: 3rem;
   align-content: center;
+  background-size: cover;
+
 }
